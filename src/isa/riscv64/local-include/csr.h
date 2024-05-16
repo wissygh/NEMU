@@ -849,6 +849,15 @@ MAP(CSRS, CSRS_DECL)
 // SD, UXL, MXR, SUM, XS, FS, VS, SPP, UBE, SPIE, SIE
 #define SSTATUS_RMASK 0x80000003000de762UL
 
+typedef enum ExtContextStatus {
+  EXT_CONTEXT_DISABLED = 0,
+  EXT_CONTEXT_INITIAL,
+  EXT_CONTEXT_CLEAN,
+  EXT_CONTEXT_DIRTY,
+} ExtContextStatus;
+
+word_t gen_status_sd(word_t status);
+
 word_t csrid_read(uint32_t csrid);
 
 // PMP
