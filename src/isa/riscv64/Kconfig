@@ -73,6 +73,10 @@ config RV_SVINVAL
   bool "Enable VM Extension Svinval"
   default y
 
+config RV_SSCOFPMF
+  bool "(Beta)Enable Sscofpmf extension(Supervisor-level Count OverFlow and Privilege Mode Filtering)"
+  default y
+
 config MISA_UNCHANGEABLE
   bool "Make misa cannot be changed by CSR write instructions like XS"
   default y
