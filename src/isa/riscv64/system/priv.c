@@ -52,7 +52,7 @@ void init_trigger() {
   cpu.TM = (TriggerModule*) malloc(sizeof (TriggerModule));
   for (int i = 0; i < CONFIG_TRIGGER_NUM; i++)
     cpu.TM->triggers[i].tdata1.common.type = TRIG_TYPE_DISABLE;
-}
+  }
 #endif // CONFIG_RV_SDTRIG
 
 // check s/h/mcounteren for counters, throw exception if counter is not enabled.

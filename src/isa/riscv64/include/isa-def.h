@@ -109,6 +109,11 @@ typedef struct {
   uint64_t vl, vtype, vlenb;
 #endif // CONFIG_RVV
 
+#ifdef CONFIG_RV_SDTRIG
+  uint64_t tselect;
+  uint64_t tinfo;
+  uint64_t tcontrol;
+#endif // CONFIG_RV_SDTRIG
 
 
   // exec state

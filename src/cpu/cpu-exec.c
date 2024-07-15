@@ -525,7 +525,7 @@ static int execute(int n) {
   static Decode s;
   prev_s = &s;
   for (; n > 0; n--) {
-#ifdef CONFIG_LIGHTQS_DEBUG
+    #ifdef CONFIG_LIGHTQS_DEBUG
     printf("ahead pc %lx %lx\n", g_nr_guest_instr, cpu.pc);
 #endif // CONFIG_LIGHTQS_DEBUG
     cpu.amo = false;
